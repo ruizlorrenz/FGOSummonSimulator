@@ -12,5 +12,11 @@ namespace FGOSummonSimulator.Entities {
         public char LimitedYN { get; set; }
         public char StoryLockedYN { get; set; }
         public int Rarity { get; set; }
+
+        public string Info {
+            get {
+                return $"{Name} | {Rarity} Star";
+            }
+        }
     }
 }

@@ -1,0 +1,14 @@
+C:\Users\ruizl\source\repos\FGOSummonSimulator\bin\Debug\FGOSummonSimulator.exe.config
+C:\Users\ruizl\source\repos\FGOSummonSimulator\bin\Debug\FGOSummonSimulator.exe
+C:\Users\ruizl\source\repos\FGOSummonSimulator\bin\Debug\FGOSummonSimulator.pdb
+C:\Users\ruizl\source\repos\FGOSummonSimulator\bin\Debug\Dapper.dll
+C:\Users\ruizl\source\repos\FGOSummonSimulator\bin\Debug\Dapper.xml
+C:\Users\ruizl\source\repos\FGOSummonSimulator\obj\Debug\FGOSummonSimulator.csproj.AssemblyReference.cache
+C:\Users\ruizl\source\repos\FGOSummonSimulator\obj\Debug\FGOSummonSimulator.csproj.SuggestedBindingRedirects.cache
+C:\Users\ruizl\source\repos\FGOSummonSimulator\obj\Debug\FGOSummonSimulator.Dashboard.resources
+C:\Users\ruizl\source\repos\FGOSummonSimulator\obj\Debug\FGOSummonSimulator.Properties.Resources.resources
+C:\Users\ruizl\source\repos\FGOSummonSimulator\obj\Debug\FGOSummonSimulator.csproj.GenerateResource.cache
+C:\Users\ruizl\source\repos\FGOSummonSimulator\obj\Debug\FGOSummonSimulator.csproj.CoreCompileInputs.cache
+C:\Users\ruizl\source\repos\FGOSummonSimulator\obj\Debug\FGOSummonSimulator.csproj.CopyComplete
+C:\Users\ruizl\source\repos\FGOSummonSimulator\obj\Debug\FGOSummonSimulator.exe
+C:\Users\ruizl\source\repos\FGOSummonSimulator\obj\Debug\FGOSummonSimulator.pdb
