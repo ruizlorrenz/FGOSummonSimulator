@@ -65,8 +65,11 @@
     <Compile Include="Utility\Helper.cs" />
     <Compile Include="Utility\Interfaces\Repositories\ICraftEssenceRepository.cs" />
     <Compile Include="Utility\Interfaces\Repositories\IServantRepository.cs" />
+    <Compile Include="Utility\Interfaces\Services\IGetRollService.cs" />
+    <Compile Include="Utility\Repositories\CraftEssenceRepository.cs" />
     <Compile Include="Utility\Repositories\ServantRepository.cs" />
     <Compile Include="Utility\Rolls.cs" />
+    <Compile Include="Utility\Services\GetRollService.cs" />
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,9 +96,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Utility\Interfaces\Services\" />
-    <Folder Include="Utility\Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
