@@ -86,20 +86,20 @@
             // 
             // testButton
             // 
-            this.testButton.Location = new System.Drawing.Point(449, 66);
-            this.testButton.Name = "testButton";
-            this.testButton.Size = new System.Drawing.Size(103, 39);
-            this.testButton.TabIndex = 5;
-            this.testButton.Text = "Test";
-            this.testButton.UseVisualStyleBackColor = true;
-            this.testButton.Click += new System.EventHandler(this.testButton_Click);
+            //this.testButton.Location = new System.Drawing.Point(449, 66);
+            //this.testButton.Name = "testButton";
+            //this.testButton.Size = new System.Drawing.Size(103, 39);
+            //this.testButton.TabIndex = 5;
+            //this.testButton.Text = "Test";
+            //this.testButton.UseVisualStyleBackColor = true;
+            //this.testButton.Click += new System.EventHandler(this.testButton_Click);
             // 
             // testTextbox
             // 
-            this.testTextbox.Location = new System.Drawing.Point(449, 29);
-            this.testTextbox.Name = "testTextbox";
-            this.testTextbox.Size = new System.Drawing.Size(100, 31);
-            this.testTextbox.TabIndex = 6;
+            //this.testTextbox.Location = new System.Drawing.Point(449, 29);
+            //this.testTextbox.Name = "testTextbox";
+            //this.testTextbox.Size = new System.Drawing.Size(100, 31);
+            //this.testTextbox.TabIndex = 6;
             // 
             // Dashboard
             // 
