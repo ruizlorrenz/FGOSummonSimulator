@@ -16,14 +16,13 @@ namespace FGOSummonSimulator {
     public partial class Dashboard : Form {
         private readonly IGetRollService _getRollService;
 
-        Rolls rolls = new Rolls();
         Random rng = new Random();
         List<string> summoned = new List<string>(); // TESTING
         public Dashboard() {
+            _getRollService = new GetRollService();
             InitializeComponent();
 
             UpdateBinding();
-            _getRollService = new GetRollService();
         }
 
 
@@ -50,83 +49,35 @@ namespace FGOSummonSimulator {
 
             if (roll >= 0 && roll <= 39) {
                 // 3 star servant
-                //var ce = rolls.Get3StarCE();
                 var servant = _getRollService.GetNonLimitedServant(3);
                 summoned.Add(servant.Info);
                 UpdateBinding();
             } else if (roll >= 40 && roll <= 79) {
                 // 3 star ce
-                //MessageBox.Show($"3 STAR CE ({roll})");
                 var ce = _getRollService.GetNonLimitedCE(3);
                 summoned.Add(ce.Info);
                 UpdateBinding();
             } else if (roll >= 80 && roll <= 91) {
                 // 4 star ce
-                //MessageBox.Show($"4 STAR CE ({roll})");
                 var ce = _getRollService.GetNonLimitedCE(4);
                 summoned.Add(ce.Info);
                 UpdateBinding();
             } else if (roll >= 92 && roll <= 95) {
                 // 5 star ce
-                //MessageBox.Show($"5 STAR CE ({roll})");
                 var ce = _getRollService.GetNonLimitedCE(5);
                 summoned.Add(ce.Info);
                 UpdateBinding();
             } else if (roll >= 96 && roll <= 98) {
                 // 4 star servant
-                //MessageBox.Show($"4 STAR SERVANT ({roll})");
                 var servant = _getRollService.GetNonLimitedServant(4);
                 summoned.Add(servant.Info);
                 UpdateBinding();
             } else { // roll == 99
                 // 5 star servant
-                //MessageBox.Show($"5 STAR SERVANT ({roll})");
                 var servant = _getRollService.GetNonLimitedServant(5);
                 summoned.Add(servant.Info);
                 UpdateBinding();
             }
-
-            //private void DetermineRoll() {
-            //    int roll = rng.Next(0, 100);
-
-            //    if (roll >= 0 && roll <= 39) {
-            //        // 3 star servant
-            //        //var ce = rolls.Get3StarCE();
-            //        var servant = rolls.GetNonLimitedServant(3);
-            //        summoned.Add(servant.Info);
-            //        UpdateBinding();
-            //    } else if(roll >= 40 && roll <= 79) {
-            //        // 3 star ce
-            //        //MessageBox.Show($"3 STAR CE ({roll})");
-            //        var ce = rolls.GetNonLimitedCE(3);
-            //        summoned.Add(ce.Info);
-            //        UpdateBinding();
-            //    } else if(roll >= 80 && roll <= 91) {
-            //        // 4 star ce
-            //        //MessageBox.Show($"4 STAR CE ({roll})");
-            //        var ce = rolls.GetNonLimitedCE(4);
-            //        summoned.Add(ce.Info);
-            //        UpdateBinding();
-            //    } else if(roll >= 92 && roll <= 95) {
-            //        // 5 star ce
-            //        //MessageBox.Show($"5 STAR CE ({roll})");
-            //        var ce = rolls.GetNonLimitedCE(5);
-            //        summoned.Add(ce.Info);
-            //        UpdateBinding();
-            //    } else if (roll >= 96 && roll <= 98) {
-            //        // 4 star servant
-            //        //MessageBox.Show($"4 STAR SERVANT ({roll})");
-            //        var servant = rolls.GetNonLimitedServant(4);
-            //        summoned.Add(servant.Info);
-            //        UpdateBinding();
-            //    } else { // roll == 99
-            //        // 5 star servant
-            //        //MessageBox.Show($"5 STAR SERVANT ({roll})");
-            //        var servant = rolls.GetNonLimitedServant(5);
-            //        summoned.Add(servant.Info);
-            //        UpdateBinding();
-            //    }
-            //}
         }
     }
 }

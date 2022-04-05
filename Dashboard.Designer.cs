@@ -33,7 +33,6 @@
             this.summonSimulatorLabel = new System.Windows.Forms.Label();
             this.singleRollButton = new System.Windows.Forms.Button();
             this.multiRollButton = new System.Windows.Forms.Button();
-            this.testButton = new System.Windows.Forms.Button();
             this.testTextbox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -84,13 +83,6 @@
             this.multiRollButton.UseVisualStyleBackColor = true;
             this.multiRollButton.Click += new System.EventHandler(this.multiRollButton_Click);
             // 
-            // testButton
-            // 
-            this.testButton.Location = new System.Drawing.Point(0, 0);
-            this.testButton.Name = "testButton";
-            this.testButton.Size = new System.Drawing.Size(75, 23);
-            this.testButton.TabIndex = 1;
-            // 
             // testTextbox
             // 
             this.testTextbox.Location = new System.Drawing.Point(449, 68);
@@ -104,7 +96,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.testTextbox);
-            this.Controls.Add(this.testButton);
             this.Controls.Add(this.multiRollButton);
             this.Controls.Add(this.singleRollButton);
             this.Controls.Add(this.summonSimulatorLabel);
@@ -125,7 +116,6 @@
         private System.Windows.Forms.Label summonSimulatorLabel;
         private System.Windows.Forms.Button singleRollButton;
         private System.Windows.Forms.Button multiRollButton;
-        private System.Windows.Forms.Button testButton;
         private System.Windows.Forms.TextBox testTextbox;
     }
 }
