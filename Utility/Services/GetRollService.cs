@@ -1,6 +1,7 @@
 ﻿using FGOSummonSimulator.Entities;
 using FGOSummonSimulator.Utility.Interfaces.Repositories;
 using FGOSummonSimulator.Utility.Interfaces.Services;
+using FGOSummonSimulator.Utility.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,11 +14,17 @@ namespace FGOSummonSimulator.Utility.Services {
         private readonly ICraftEssenceRepository _craftEssenceRepo;
         private Random rng = new Random();
 
-        public GetRollService(IServantRepository servantRepo,
-                              ICraftEssenceRepository craftEssenceRepo) {
-            _servantRepo = servantRepo;
-            _craftEssenceRepo = craftEssenceRepo;
+        public GetRollService() {
+            _servantRepo = new ServantRepository();
+            _craftEssenceRepo = new CraftEssenceRepository();
         }
+        //private readonly IServantRepository _servantRepo;
+        //private readonly ICraftEssenceRepository _craftEssenceRepo;
+
+        //public GetRollService() {
+        //    _servantRepo = new ServantRepository();
+        //    _craftEssenceRepo = new CraftEssenceRepository();
+        //}
         public CraftEssence GetNonLimitedCE(int rarity) {
             List<CraftEssence> list = new List<CraftEssence>();
             
