@@ -11,7 +11,6 @@ Below is a table representing the rates of summoning.
 | ★★★ (R) | 40% |
 | ★★★★ (SR) | 12% |
 | ★★★★★ (SSR) | 4% |
-<br>
 #### Servant
 | Rarity | Chance |
 | ----------- | ----------- |
