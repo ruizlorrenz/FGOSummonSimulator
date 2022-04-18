@@ -37,11 +37,13 @@ namespace FGOSummonSimulator {
             for (int i = 0; i < 11; i++) {
                 DetermineRoll();
             }
+            
         }
 
         private void singleRollButton_Click(object sender, EventArgs e) {
             summoned.Clear();
             DetermineRoll();
+            
         }
 
         private void DetermineRoll() {
@@ -79,5 +81,7 @@ namespace FGOSummonSimulator {
                 UpdateBinding();
             }
         }
+
+        
     }
 }
